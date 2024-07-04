@@ -160,9 +160,9 @@ const Home = () => {
           <div class="icon">
             <i class="bi bi-easel"></i>
           </div>
-          <a href="service-details.html" class="stretched-link">
+          <Link to="/digitize" class="stretched-link">
             <h3>Digitization</h3>
-          </a>
+          </Link>
           <p>Digitization involves converting physical birth certificates into electronic formats, facilitating easier access and storage.</p>
         </div>
       </div>
@@ -187,9 +187,9 @@ const Home = () => {
           <div class="icon">
             <i class="bi bi-calendar4-week"></i>
           </div>
-          <a href="service-details.html" class="stretched-link">
+          <Link to="/authenticate" class="stretched-link">
             <h3>Authentication</h3>
-          </a>
+          </Link>
           <p>Authentication ensures the validity and integrity of digital birth certificates through secure verification methods, safeguarding against fraud and unauthorized alterations.</p>
           <a href="service-details.html" class="stretched-link"></a>
         </div>
