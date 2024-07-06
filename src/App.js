@@ -8,6 +8,7 @@ import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 import Login from './Pages/Login';
 import Logup from './Pages/Logup'
+import ActsList from './Pages/ActsList';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/logup" element={<Logup />} />
             <Route path="/digitize" element={<Digitize />} />
             <Route path="/authenticate" element={<Authenticate />} />
+            <Route path="/actslist" element={<ActsList/>}/>
           </Routes>
         </div>
         <Footer />

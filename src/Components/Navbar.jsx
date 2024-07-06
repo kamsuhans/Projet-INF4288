@@ -44,6 +44,8 @@ const Navbar = () => {
               <ul className={isDropdownOpen ? 'active' : ''}>
                 <li><Link to="/digitize" onClick={closeDropdown}>Digitalise</Link></li>
                 <li><Link to="/authenticate" onClick={closeDropdown}>Authentificate</Link></li>
+                <li><Link to="/ActsList" onClick={closeDropdown}>Birth certificates</Link></li>
+
               </ul>
             </li>
             <li><HashLink smooth to="/#contact" className={activeLink === 'contact' ? 'active' : ''} onClick={() => handleNavLinkClick('contact')}>Contact</HashLink></li>
