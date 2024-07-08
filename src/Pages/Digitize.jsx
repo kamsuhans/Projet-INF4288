@@ -40,7 +40,6 @@ const Digitize = () => {
 
   const handleFileChange = (e) => {
     setFile(e.target.files[0]);
-    setChemin(e.target.value);
     setError('');
   };
 
@@ -110,7 +109,7 @@ const Digitize = () => {
         parNous2: data.byUs2,
         etatCivilCentreDe: data.civilStatusRegister,
         assisteDe: data.inThePresenceOf,
-        chemin: chemin 
+        chemin: data.chemin 
       };
 
       const response = await axios.post('https://projet-inf4288.onrender.com/api/digitize/', formDataToSend);
@@ -131,7 +130,7 @@ const Digitize = () => {
   const handleCancel = () => {
     setShowForm(false);
     setFile(null);
-    setChemin('');
+    // setChemin'';
     setData({
       region: '',
       division: '',
@@ -339,6 +338,9 @@ const Digitize = () => {
         <div className="field" style={{ top: '1050px', left: '70px' }}>
           <div className="label">Assiste de:<span className="labeli">in the presence of</span></div>
           <input type="text" className="input" id="inThePresenceOf" value={data.inThePresenceOf} onChange={handleInputChange} />
+        </div>
+        <div className="field" style={{ top: '1050px', left: '70px' }}>
+          <input type="hidden" className="input" id="chemin" value={data.chemin}/>
         </div>
           <button onClick={handleConfirm} style={{ position: 'absolute', top: '1100px', left: '90px' }} className="btn btn-success mt-3" disabled={confirming}>
             {confirming ? 'Confirming...' : 'Confirmer'}
