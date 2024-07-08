@@ -7,14 +7,12 @@ const Results = () => {
   const { file, result } = location.state;
   const navigate = useNavigate();
   
-
   const handleBack = () => {
     navigate('/authenticate');
   };
 
   return (
-
-    <div className="container d-flex flex-column justify-content-center align-items-center min-vh-100 mb-7 ">
+    <div className="container d-flex flex-column justify-content-center align-items-center min-vh-100 mb-7">
       <h2 className="text-center mb-7">Authentication Results</h2>
       <div className="w-75">
         <h3>Results</h3>
@@ -33,7 +31,7 @@ const Results = () => {
           </div>
         </div>
         <div className="mb-3 text-center">
-          <h5 style={{ color: result.pourcentageDeSimilarite > 80 ? 'red' : 'green' }}>
+          <h5 style={{ color: result.pourcentageDeSimilarite > 80 ? 'green' : 'red' }}>
             Matching Percentage: {result.pourcentageDeSimilarite}
           </h5>
         </div>
