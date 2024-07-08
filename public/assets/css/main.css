@@ -1739,10 +1739,8 @@ html, body {
 }
 
 .content {
-  flex: 1;
+  flex: 5;
 }
 
-.footer {
-  flex-shrink: 0;
-}
+
 
