@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 const Digitize = () => {
   const navigate = useNavigate();
   const [file, setFile] = useState(null);
+  const [chemin, setChemin] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [confirming, setConfirming] = useState(false);
@@ -39,6 +40,7 @@ const Digitize = () => {
 
   const handleFileChange = (e) => {
     setFile(e.target.files[0]);
+    setChemin(e.target.value);
     setError('');
   };
 
@@ -60,7 +62,7 @@ const Digitize = () => {
     setLoading(true);
     setError('');
     const formData = new FormData();
-    formData.append('acte', file);  // Utilisation de 'acte' pour le champ de fichier
+    formData.append('acte', file);
 
     try {
       const response = await axios.post('https://projet-inf4288.onrender.com/api/digitize/extract', formData, {
@@ -79,10 +81,9 @@ const Digitize = () => {
     }
   };
 
-
   const handleConfirm = async () => {
     setConfirming(true);
-    
+
     try {
       const formDataToSend = {
         region: data.region,
@@ -108,13 +109,14 @@ const Digitize = () => {
         parNous1: data.byUs1,
         parNous2: data.byUs2,
         etatCivilCentreDe: data.civilStatusRegister,
-        assisteDe: data.inThePresenceOf
+        assisteDe: data.inThePresenceOf,
+        chemin: chemin 
       };
 
       const response = await axios.post('https://projet-inf4288.onrender.com/api/digitize/', formDataToSend);
 
-      if (response.status === 200) {
-        navigate('/');
+      if (response.status === 201) {
+        navigate('/'); // Redirection vers la page d'accueil si la confirmation est réussie
       } else {
         setError('An error occurred. Please check your input.');
       }
@@ -125,9 +127,11 @@ const Digitize = () => {
       setConfirming(false);
     }
   };
+
   const handleCancel = () => {
     setShowForm(false);
     setFile(null);
+    setChemin('');
     setData({
       region: '',
       division: '',
@@ -154,7 +158,7 @@ const Digitize = () => {
       civilStatusRegister: '',
       inThePresenceOf: ''
     });
-    navigate('/digitize');
+    navigate('/digitize'); // Redirection vers la page de numérisation après annulation
   };
 
   return (
@@ -175,14 +179,10 @@ const Digitize = () => {
             width: 100%;
             padding-bottom: 1120px; /* Ajout de marge inférieure pour éviter la superposition avec le footer */
           }
-          
-         
-          
           .fieldi {
             position: absolute;
             font-size: 12px;
           }
-          
           .field {
             position: absolute;
             font-size: 12px;
@@ -190,33 +190,29 @@ const Digitize = () => {
             align-items: center;
             justify-content: space-between;
           }
-          
           .input {
             border: none;
             border-bottom: 1px solid #000;
             background-color: transparent;
             width: 700px;
           }
-          
           .label {
             display: block;
             font-weight: bold;
           }
-          
           .labeli {
             display: block;
             font-weight: 200;
           }
-             .tyu 
-          {
-          padding-top: 200px;
+          .tyu {
+            padding-top: 200px;
           }
         `}
       </style>
       {!showForm ? (
         <form onSubmit={handleSubmit} className="w-50">
-          <div className="mb-3">
           <h2 className="text-center mb-4 tyu">Digitize Birth Certificate</h2>
+          <div className="mb-3">
             <label htmlFor="fileInput" className="form-label">Upload the birth certificate you want to numerate</label>
             <input 
               name='acte'
@@ -235,7 +231,7 @@ const Digitize = () => {
         </form>
       ) : (
         <div className="container mt-5">
-        <div className="fieldi" style={{ top: '130px', left: '20px' }}>
+          <div className="fieldi" style={{ top: '130px', left: '20px' }}>
           <div className="label">PROVINCE <span className="labeli">PROVINCE</span></div>
           <input style={{ width: '300px' }} type="text" className="input" id="region" value={data.region} onChange={handleInputChange} />
         </div>
@@ -344,10 +340,10 @@ const Digitize = () => {
           <div className="label">Assiste de:<span className="labeli">in the presence of</span></div>
           <input type="text" className="input" id="inThePresenceOf" value={data.inThePresenceOf} onChange={handleInputChange} />
         </div>
-           <button onClick={handleConfirm}  style={{position: 'absolute', top: '1100px', left: '90px'}}  className="btn btn-success mt-3" disabled={confirming}>
+          <button onClick={handleConfirm} style={{ position: 'absolute', top: '1100px', left: '90px' }} className="btn btn-success mt-3" disabled={confirming}>
             {confirming ? 'Confirming...' : 'Confirmer'}
           </button>
-          <button onClick={handleCancel} style={{position: 'absolute', top: '1100px', left: '600px'}} className="btn btn-danger mt-3" disabled={confirming}>
+          <button onClick={handleCancel} style={{ position: 'absolute', top: '1100px', left: '600px' }} className="btn btn-danger mt-3" disabled={confirming}>
             Annuler
           </button>
         </div>
