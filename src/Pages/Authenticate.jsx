@@ -75,7 +75,7 @@ const Authenticate = () => {
       setShowForm(true);
     } catch (error) {
       console.error('Error uploading file:', error);
-      setError('An error occurred while uploading the file. Please try again.');
+      // setError('An error occurred while uploading the file. Please try again.');
     } finally {
       setLoading(false);
     }
@@ -115,8 +115,9 @@ const Authenticate = () => {
 
       const response = await axios.post('https://projet-inf4288.onrender.com/api/authenticate/', formDataToSend);
 
-      if (response.status === 201) {
+      if (response.status === 200) {
         setResults(response.data); 
+        navigate('/results', { state: { file, result: response.data } }); 
       } else {
         // setError('An error occurred. Please check your input.');
       }
@@ -354,15 +355,7 @@ const Authenticate = () => {
         </div>
       </div>
       )}
-      {results && (
-  <div className="container mt-5">
-    <h2>Authentication Results</h2>
-    <p>Percentage of similarity: {results.pourcentageDeSimilarite}</p>
-    <p>Path to the digitized file: {results.cheminVersFichierNumeriser}</p>
-    <p>Is authentic: {results.estAuthentique ? 'Yes' : 'No'}</p>
-    {/* Affichez d'autres champs comme nécessaire */}
-  </div>
-)}
+
     </div>
   );
 };
