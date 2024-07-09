@@ -240,9 +240,7 @@ const Home = () => {
           <div class="portfolio-info">
             <h4>Copie</h4>
             <p>Birth certificate copie</p>
-            <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-          </div>
+           </div>
         </div>
         {/* <!-- End Portfolio Item --> */}
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
@@ -250,9 +248,7 @@ const Home = () => {
           <div class="portfolio-info">
             <h4>Digitize birth certificate</h4>
             <p>Digitize birth certificate</p>
-            <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-          </div>
+            </div>
         </div>
         {/* <!-- End Portfolio Item --> */}
 
@@ -261,9 +257,7 @@ const Home = () => {
           <div class="portfolio-info">
             <h4>Digitize birth certificate</h4>
             <p>Digitize birth certificate</p>
-            <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-          </div>
+            </div>
         </div>
         {/* <!-- End Portfolio Item --> */}
 
@@ -272,9 +266,7 @@ const Home = () => {
           <div class="portfolio-info">
             <h4>secure</h4>
             <p>Reduce the risk of forgery and fraudulent use.</p>
-            <a href="assets/img/masonry-portfolio/secure.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-          </div>
+            </div>
         </div>
         {/* <!-- End Portfolio Item --> */}
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
@@ -282,9 +274,7 @@ const Home = () => {
           <div class="portfolio-info">
             <h4>Increased accessibility:</h4>
             <p>Secure and convenient access to birth certificates online.</p>
-            <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-          </div>
+            </div>
         </div>
         {/* <!-- End Portfolio Item --> */}
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
@@ -292,9 +282,7 @@ const Home = () => {
           <div class="portfolio-info">
             <h4>birht certificate</h4>
             <p>Birth certificate</p>
-            <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-          </div>
+            </div>
         </div>
  
         {/* <!-- End Portfolio Item --> */}
@@ -306,41 +294,6 @@ const Home = () => {
 
 </section>
 {/* <!-- /Portfolio Section --> */}
-
-{/* <!-- /Stats Section --> */}
-{/* <!-- Testimonials Section --> */}
-<section id="testimonials" class="testimonials section dark-background">
-
-  <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt=""/>
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-    <div class="swiper init-swiper">
-      <div class="swiper-wrapper">
-      <div class="swiper-slide">
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt=""/>
-            <h3>Saul Goodman</h3>
-            <h4>Ceo &amp; Founder</h4>
-            <div class="stars">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-            </div>
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>Secure your birth certificates and make them easier to access. SANDO combats fraud and offers you convenient and secure online management.</span>
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-          </div>
-        </div>
-        {/* <!-- End testimonial item --> */}
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
-
-  </div>
-
-</section>
-{/* <!-- /Testimonials Section --> */}
 
 {/* <!-- Team Section --> */}
 <section id="team" class="team section">
