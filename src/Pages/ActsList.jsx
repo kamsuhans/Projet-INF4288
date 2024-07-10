@@ -8,7 +8,7 @@ const ActsList = () => {
     department: '',
     arrondissement: '',
     nomEnfant: '',
-    numeroActe:''
+    numeroActe: ''
   });
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
@@ -56,49 +56,49 @@ const ActsList = () => {
         <h1 className="text-center my-4">Research a Birth Certificate</h1>
         <div className="d-flex justify-content-between align-items-center mb-4">
           <form className="d-flex w-100" onSubmit={handleSearchSubmit}>
-            <input 
-              type="text" 
-              className="form-control me-2" 
-              placeholder="Region" 
+            <input
+              type="text"
+              className="form-control me-2"
+              placeholder="Region"
               name="region"
-              value={searchParams.region} 
-              onChange={handleInputChange} 
+              value={searchParams.region}
+              onChange={handleInputChange}
               disabled={isLoading}
             />
-            <input 
-              type="text" 
-              className="form-control me-2" 
-              placeholder="Department" 
+            <input
+              type="text"
+              className="form-control me-2"
+              placeholder="Department"
               name="department"
-              value={searchParams.department} 
-              onChange={handleInputChange} 
+              value={searchParams.department}
+              onChange={handleInputChange}
               disabled={isLoading}
             />
-            <input 
-              type="text" 
-              className="form-control me-2" 
-              placeholder="Arrondissement" 
+            <input
+              type="text"
+              className="form-control me-2"
+              placeholder="Arrondissement"
               name="arrondissement"
-              value={searchParams.arrondissement} 
-              onChange={handleInputChange} 
+              value={searchParams.arrondissement}
+              onChange={handleInputChange}
               disabled={isLoading}
             />
-            <input 
-              type="text" 
-              className="form-control me-2" 
-              placeholder="Identification number" 
+            <input
+              type="text"
+              className="form-control me-2"
+              placeholder="Identification number"
               name="numeroActe"
-              value={searchParams.numeroActe} 
-              onChange={handleInputChange} 
+              value={searchParams.numeroActe}
+              onChange={handleInputChange}
               disabled={isLoading}
             />
-            <input 
-              type="text" 
-              className="form-control me-2" 
-              placeholder="Name" 
+            <input
+              type="text"
+              className="form-control me-2"
+              placeholder="Name"
               name="nomEnfant"
-              value={searchParams.nomEnfant} 
-              onChange={handleInputChange} 
+              value={searchParams.nomEnfant}
+              onChange={handleInputChange}
               disabled={isLoading}
             />
             <button type="submit" className="btn btn-primary" disabled={isLoading}>
@@ -138,8 +138,9 @@ const ActsList = () => {
                       <p> {act.parnous}</p>
                       <p>Etat civil centre de : {act.etatcivilcentrede}</p>
                       <p>Assiste de : {act.assistede}</p>
-                      <p>Lien vers le pdf : {act.cheminversacte}</p>
+                      <p>Lien vers le pdf : <a href={act.cheminversacte} target="_blank" rel="noopener noreferrer">Voir le PDF</a></p>
                       {/* <embed src={act.cheminversacte} width="100%" height="400px" type="application/pdf" /> */}
+
                     </div>
                   </div>
                 </div>
