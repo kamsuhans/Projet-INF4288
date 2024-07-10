@@ -168,21 +168,22 @@ const Home = () => {
       </div>
       {/* <!-- End Service Item --> */}
 
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-        {/* <div class="service-item position-relative">
-          <div class="icon">
-            <i class="bi bi-bounding-box-circles"></i>
-          </div>
-          <a href="service-details.html" class="stretched-link">
-            <h3>Asperiores Commodit</h3>
-          </a>
-          <p>Authentication ensures the validity and integrity of digital birth certificates through secure verification methods, safeguarding against fraud and unauthorized alterations.</p>
-          <a href="service-details.html" class="stretched-link"></a>
-        </div> */}
-      </div>
       {/* <!-- End Service Item --> */}
 
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+        {/* <div class="service-item position-relative">
+          <div class="icon">
+            <i class="bi bi-calendar4-week"></i>
+          </div>
+          <Link to="/authenticate" class="stretched-link">
+            <h3>Authentication</h3>
+          </Link>
+          <p></p>
+          <a href="service-details.html" class="stretched-link"></a>
+        </div> */}
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
         <div class="service-item position-relative">
           <div class="icon">
             <i class="bi bi-calendar4-week"></i>
@@ -191,9 +192,9 @@ const Home = () => {
             <h3>Authentication</h3>
           </Link>
           <p>Authentication ensures the validity and integrity of digital birth certificates through secure verification methods, safeguarding against fraud and unauthorized alterations.</p>
-          <a href="service-details.html" class="stretched-link"></a>
         </div>
       </div>
+      {/* <!-- End Service Item --> */}
       {/* <!-- End Service Item --> */}
     </div>
   </div>
@@ -421,7 +422,7 @@ const Home = () => {
       </div>
 
       <div class="col-lg-8">
-        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+        <form action="/" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
           <div class="row gy-4">
 
             <div class="col-md-6">

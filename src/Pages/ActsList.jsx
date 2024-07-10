@@ -136,7 +136,7 @@ const ActsList = () => {
               </div>
             ))
           ) : (
-            !isLoading && <div className="col-12 text-center">No acts found</div>
+            !isLoading && <div className="col-12 text-center">search for a birth Certificate</div>
           )}
         </div>
       </div>
