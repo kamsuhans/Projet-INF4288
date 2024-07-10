@@ -7,7 +7,8 @@ const ActsList = () => {
     region: '',
     department: '',
     arrondissement: '',
-    name: ''
+    nomEnfant: '',
+    numeroActe:''
   });
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
@@ -85,9 +86,18 @@ const ActsList = () => {
             <input 
               type="text" 
               className="form-control me-2" 
+              placeholder="Identification number" 
+              name="numeroActe"
+              value={searchParams.numeroActe} 
+              onChange={handleInputChange} 
+              disabled={isLoading}
+            />
+            <input 
+              type="text" 
+              className="form-control me-2" 
               placeholder="Name" 
-              name="name"
-              value={searchParams.name} 
+              name="nomEnfant"
+              value={searchParams.nomEnfant} 
               onChange={handleInputChange} 
               disabled={isLoading}
             />

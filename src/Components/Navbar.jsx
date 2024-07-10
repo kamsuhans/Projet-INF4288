@@ -44,7 +44,7 @@ const Navbar = () => {
     <div id="header" className={`header d-flex align-items-center fixed-top ${isMobileMenuOpen ? 'mobile-nav-active' : ''}`}>
       <div className="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
         <Link to="/" className="logo d-flex align-items-center me-auto me-lg-0">
-          <h1 className="sitename">DAB</h1>
+          <h1 className="sitename">SANDO</h1>
           <span>.</span>
         </Link>
 

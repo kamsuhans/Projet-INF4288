@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="row gy-4">
             <div className="col-lg-4 col-md-6 footer-about">
               <a href="index.html" className="logo d-flex align-items-center">
-                <span className="sitename">DAB</span>
+                <span className="sitename">SANDO</span>
               </a>
               <div className="footer-contact pt-3">
                 <p>University of</p>
@@ -69,7 +69,7 @@ const Footer = () => {
 
       <div className="copyright">
         <div className="container text-center">
-          <p>© <span>Copyright</span> <strong className="px-1 sitename">DAB</strong> <span>All Rights Reserved</span></p>
+          <p>© <span>Copyright</span> <strong className="px-1 sitename">SANDO</strong> <span>All Rights Reserved</span></p>
           <div className="credits">
             {/* <!-- All the links in the footer should remain intact. -->
             <!-- You can delete the links only if you've purchased the pro version. -->
