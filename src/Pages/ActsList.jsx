@@ -138,8 +138,8 @@ const ActsList = () => {
                       <p> {act.parnous}</p>
                       <p>Etat civil centre de : {act.etatcivilcentrede}</p>
                       <p>Assiste de : {act.assistede}</p>
-
-                      <embed src={act.cheminversacte} width="100%" height="400px" type="application/pdf" />
+                      <p>Lien vers le pdf : {act.cheminversacte}</p>
+                      {/* <embed src={act.cheminversacte} width="100%" height="400px" type="application/pdf" /> */}
                     </div>
                   </div>
                 </div>
