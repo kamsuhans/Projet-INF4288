@@ -167,21 +167,20 @@ const Home = () => {
         </div>
       </div>
       {/* <!-- End Service Item --> */}
-
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-item position-relative">
+          <div class="icon">
+            <i class="bi bi-binoculars"></i>
+          </div>
+          <Link to="/actslist" class="stretched-link">
+            <h3>Research a birth certificate</h3>
+          </Link>
+          <p> Search for and verify birth certificates seamlessly with our comprehensive digitalization and authentication services.</p>
+        </div>
+      </div>
       {/* <!-- End Service Item --> */}
 
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-        {/* <div class="service-item position-relative">
-          <div class="icon">
-            <i class="bi bi-calendar4-week"></i>
-          </div>
-          <Link to="/authenticate" class="stretched-link">
-            <h3>Authentication</h3>
-          </Link>
-          <p></p>
-          <a href="service-details.html" class="stretched-link"></a>
-        </div> */}
-      </div>
+
 
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
         <div class="service-item position-relative">
