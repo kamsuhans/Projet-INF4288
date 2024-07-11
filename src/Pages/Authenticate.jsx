@@ -118,12 +118,18 @@ const Authenticate = () => {
       if (response.status === 200) {
         setResults(response.data); 
         navigate('/results', { state: { file, result: response.data } }); 
-      } else {
+      } 
+      else {
         // setError('An error occurred. Please check your input.');
       }
     } catch (error) {
-       console.error('Error confirming data:', error);
-       setError('An error occurred while confirming the data. Please try again.');
+      if(error.response.status === 422){
+        setError('Birth certificate is not yet digitize');
+        setTimeout(()=>navigate('/'), 8000);
+      }else{
+        console.error('Error confirming data:', error);
+        setError('An error occurred while confirming the data. Please try again.');
+      }
     } finally {
       setConfirming(false);
     }
