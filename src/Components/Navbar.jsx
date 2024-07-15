@@ -62,7 +62,7 @@ const Navbar = () => {
                 <i className="bi bi-chevron-down" onClick={toggleDropdown} role="button" aria-expanded={isDropdownOpen}></i>
               </HashLink>
               <ul className={isDropdownOpen ? 'dropdown-active' : ''} >
-                <li><Link to="/digitize" onClick={closeDropdown}>Digitalise</Link></li>
+                <li><Link to="/digitize" onClick={closeDropdown}>Digitize</Link></li>
                 <li><Link to="/authenticate" onClick={closeDropdown}>Authenticate</Link></li>
                 <li><Link to="/ActsList" onClick={closeDropdown}>Search for a Birth Certificates</Link></li>
               </ul>
