@@ -63,8 +63,8 @@ const Navbar = () => {
               </HashLink>
               <ul className={isDropdownOpen ? 'dropdown-active' : ''} >
                 <li><Link to="/digitize" onClick={closeDropdown}>Digitalise</Link></li>
-                <li><Link to="/authenticate" onClick={closeDropdown}>Authentificate</Link></li>
-                <li><Link to="/ActsList" onClick={closeDropdown}>Research Birth Certificates</Link></li>
+                <li><Link to="/authenticate" onClick={closeDropdown}>Authenticate</Link></li>
+                <li><Link to="/ActsList" onClick={closeDropdown}>Search for a Birth Certificates</Link></li>
               </ul>
             </li>
             <li>

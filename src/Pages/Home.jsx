@@ -15,7 +15,7 @@ const Home = () => {
     <div class="row justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
       <div class="col-xl-6 col-lg-8">
         <h2>Your Saftey Our Responsibility<span>.</span></h2>
-        <p>We are team of talented digital engineer</p>
+        <p>We are team of talented digital engineers</p>
       </div>
     </div>
 
@@ -23,7 +23,7 @@ const Home = () => {
       <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="300">
         <div class="icon-box">
           <i class="bi bi-binoculars"></i>
-          <h3><a href="">Authentification</a></h3>
+          <h3><a href="">Authentication</a></h3>
         </div>
       </div>
       <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="400">
@@ -173,9 +173,9 @@ const Home = () => {
             <i class="bi bi-binoculars"></i>
           </div>
           <Link to="/actslist" class="stretched-link">
-            <h3>Research a birth certificate</h3>
+            <h3>Search for a birth certificate</h3>
           </Link>
-          <p> Search for and verify birth certificates seamlessly with our comprehensive digitalization and authentication services.</p>
+          <p> Search for and verify birth certificates seamlessly with our comprehensive digitization and authentication services.</p>
         </div>
       </div>
       {/* <!-- End Service Item --> */}
