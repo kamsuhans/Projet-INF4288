@@ -265,79 +265,79 @@ const Digitize = () => {
         </div>
         <div className="field" style={{ top: '430px', left: '70px' }}>
           <div className="label">Le-on the:</div>
-          <input type="text" className="input" id="birthDate" value={data.birthDate} onChange={handleInputChange} />
+          <input type="text" style={{width: '735px'}} className="input" id="birthDate" value={data.birthDate} onChange={handleInputChange} />
         </div>
         <div className="field" style={{ top: '460px', left: '70px' }}>
           <div className="label">Est ne(e) a:<span className="labeli">was bornat</span></div>
-          <input type="text" className="input" id="birthPlace" value={data.birthPlace} onChange={handleInputChange} />
+          <input type="text" style={{width: '727px'}} className="input" id="birthPlace" value={data.birthPlace} onChange={handleInputChange} />
         </div>
         <div className="field" style={{ top: '495px', left: '70px' }}>
           <div className="label">Sexe- sex:</div>
-          <input type="text" className="input" id="sex" value={data.sex} onChange={handleInputChange} />
+          <input type="text" style={{width: '735px'}} className="input" id="sex" value={data.sex} onChange={handleInputChange} />
         </div>
         <div className="field" style={{ top: '525px', left: '70px' }}>
           <div className="label">De - of:</div>
-          <input type="text" className="input" id="fatherName" value={data.fatherName} onChange={handleInputChange} />
+          <input type="text" style={{width: '750px'}} className="input" id="fatherName" value={data.fatherName} onChange={handleInputChange} />
         </div>
         <div className="field" style={{ top: '560px', left: '70px' }}>
           <div className="label">Ne(a) a:<span className="labeli">Born at</span></div>
-          <input type="text" className="input" id="fatherBirthPlace" value={data.fatherBirthPlace} onChange={handleInputChange} />
+          <input type="text" style={{width: '748px'}} className="input" id="fatherBirthPlace" value={data.fatherBirthPlace} onChange={handleInputChange} />
         </div>
         <div className="field" style={{ top: '600px', left: '70px' }}>
           <div className="label">Domicilie a:<span className="labeli">residence at</span></div>
-          <input type="text" className="input" id="fatherResidence" value={data.fatherResidence} onChange={handleInputChange} />
+          <input type="text" style={{width: '728px'}} className="input" id="fatherResidence" value={data.fatherResidence} onChange={handleInputChange} />
         </div>
         <div className="field" style={{ top: '640px', left: '70px' }}>
           <div className="label">Profession:<span className="labeli">Occupation</span></div>
-          <input type="text" className="input" id="fatherOccupation" value={data.fatherOccupation} onChange={handleInputChange} />
+          <input type="text" style={{width: '730px'}} className="input" id="fatherOccupation" value={data.fatherOccupation} onChange={handleInputChange} />
         </div>
         <div className="field" style={{ top: '679px', left: '70px' }}>
           <div className="label">Et de - and of:</div>
-          <input type="text" className="input" id="motherName" value={data.motherName} onChange={handleInputChange} />
+          <input type="text" style={{width: '720px'}} className="input" id="motherName" value={data.motherName} onChange={handleInputChange} />
         </div>
         <div className="field" style={{ top: '705px', left: '70px' }}>
           <div className="label">Ne(e) a:<span className="labeli">Born at</span></div>
-          <input type="text" className="input" id="motherBirthPlace" value={data.motherBirthPlace} onChange={handleInputChange} />
+          <input type="text" style={{width: '755px'}} className="input" id="motherBirthPlace" value={data.motherBirthPlace} onChange={handleInputChange} />
         </div>
         <div className="field" style={{ top: '740px', left: '70px' }}>
           <div className="label">Le-on the:</div>
-          <input type="text" className="input" id="motherBirthDate" value={data.motherBirthDate} onChange={handleInputChange} />
+          <input type="text" style={{width: '740px'}} className="input" id="motherBirthDate" value={data.motherBirthDate} onChange={handleInputChange} />
         </div>
         <div className="field" style={{ top: '775px', left: '70px' }}>
           <div className="label">Domicilie a:<span className="labeli">Residence at</span></div>
-          <input type="text" className="input" id="motherResidence" value={data.motherResidence} onChange={handleInputChange} />
+          <input type="text" style={{width: '728px'}} className="input" id="motherResidence" value={data.motherResidence} onChange={handleInputChange} />
         </div>
         <div className="field" style={{ top: '810px', left: '70px' }}>
           <div className="label">Profession:<span className="labeli">Occupation</span></div>
-          <input type="text" className="input" id="motherOccupation" value={data.motherOccupation} onChange={handleInputChange} />
+          <input type="text" style={{width: '734px'}} className="input" id="motherOccupation" value={data.motherOccupation} onChange={handleInputChange} />
         </div>
         <div className="field" style={{ top: '845px', left: '70px' }}>
           <div className="label">Dresse le:<span className="labeli">Drawn on</span></div>
-          <input type="text" className="input" id="drawnOn" value={data.drawnOn} onChange={handleInputChange} />
+          <input type="text" style={{width: '745px'}} className="input" id="drawnOn" value={data.drawnOn} onChange={handleInputChange} />
         </div>
         <div className="field" style={{ top: '880px', left: '70px' }}>
           <div className="label">Sur la declaration de:<span className="labeli">on the declaration of</span></div>
-          <input type="text" className="input" id="declarantName1" value={data.declarantName1} onChange={handleInputChange} />
+          <input type="text" style={{width: '680px'}} className="input" id="declarantName1" value={data.declarantName1} onChange={handleInputChange} />
         </div>
         <div className="field" style={{ top: '915px', left: '70px' }}>
           <div className="label"><span className="labeli"></span></div>
-          <input type="text" className="input" id="declarantName2" value={data.declarantName2} onChange={handleInputChange} />
+          <input type="text" style={{width: '803px'}} className="input" id="declarantName2" value={data.declarantName2} onChange={handleInputChange} />
         </div>
         <div className="field" style={{ top: '950px', left: '70px' }}>
           <div className="label">Par nous:<span className="labeli">by us</span></div>
-          <input type="text" className="input" id="byUs1" value={data.byUs1} onChange={handleInputChange} />
+          <input type="text" style={{width: '747px'}}className="input" id="byUs1" value={data.byUs1} onChange={handleInputChange} />
         </div>
         <div className="field" style={{ top: '985px', left: '70px' }}>
           <div className="label"><span className="labeli"></span></div>
-          <input type="text" className="input" id="byUs2" value={data.byUs2} onChange={handleInputChange} />
+          <input type="text" style={{width: '804px'}} className="input" id="byUs2" value={data.byUs2} onChange={handleInputChange} />
         </div>
         <div className="field" style={{ top: '1019px', left: '70px' }}>
           <div className="label">Centre d'etat civil de:<span className="labeli">civil status register of</span></div>
-          <input type="text" className="input" id="civilStatusRegister" value={data.civilStatusRegister} onChange={handleInputChange} />
+          <input type="text" style={{width: '682px'}} className="input" id="civilStatusRegister" value={data.civilStatusRegister} onChange={handleInputChange} />
         </div>
         <div className="field" style={{ top: '1050px', left: '70px' }}>
           <div className="label">Assiste de:<span className="labeli">in the presence of</span></div>
-          <input type="text" className="input" id="inThePresenceOf" value={data.inThePresenceOf} onChange={handleInputChange} />
+          <input type="text" style={{width: '710px'}} className="input" id="inThePresenceOf" value={data.inThePresenceOf} onChange={handleInputChange} />
         </div>
         <div className="field" style={{ top: '1050px', left: '70px' }}>
           <input type="hidden" className="input" id="chemin" value={data.chemin}/>
